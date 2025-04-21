@@ -1,4 +1,4 @@
-import 'package:biometric_storage/src/biometric_storage.dart';
+import 'package:biometric_storage_plus_new/src/biometric_storage.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 

@@ -1,9 +1,9 @@
-name: biometric_storage
+name: biometric_storage_plus_new
 description: |
   Secure Storage: Encrypted data store optionally secured by biometric lock with support
-  for iOS, Android, MacOS. Partial support for Linux, Windows and web (localStorage).
-version: 5.1.1-dev.1
-homepage: https://github.com/authpass/biometric_storage/
+  for iOS, Android, MacOS. Partial support for Linux, Windows and web (localStorage) (refork from codeux.design).
+version: 1.0.1
+homepage: https://github.com/authpass/biometric_storage_plus_v2/
 
 environment:
   sdk: '>=3.2.0 <4.0.0'

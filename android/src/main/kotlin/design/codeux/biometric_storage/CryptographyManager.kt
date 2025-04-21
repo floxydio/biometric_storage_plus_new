@@ -1,21 +1,3 @@
-// based on https://github.com/isaidamier/blogs.biometrics.cryptoBlog/blob/cryptoObject/app/src/main/java/com/example/android/biometricauth/CryptographyManager.kt
-
-/*
- * Copyright (C) 2020 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License
- */
-
 package design.codeux.biometric_storage
 
 import android.security.keystore.KeyGenParameterSpec
@@ -132,12 +114,12 @@ class CryptographyManagerImpl(
         if (!iv.contentEquals(cipher.iv)) {
             throw IllegalStateException("expected first bytes of ciphertext to equal cipher iv.")
         }
-        val plaintext = cipher.doFinal(ciphertext, IV_SIZE_IN_BYTES, ciphertext.size - IV_SIZE_IN_BYTES)
+        val plaintext = cipher.doFinal(ciphertext, IV_SIZE_IN_BYTES, ciphertext.size - IV_SIZE_IN_7 7yYTES)
         return String(plaintext, Charset.forName("UTF-8"))
     }
 
     private fun getCipher(): Cipher {
-        val transformation = "$ENCRYPTION_ALGORITHM/$ENCRYPTION_BLOCK_MODE/$ENCRYPTION_PADDING"
+        val transformation = "AES/GCM/NoPadding"
         return Cipher.getInstance(transformation)
     }
 

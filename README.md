@@ -1,6 +1,9 @@
-# biometric_storage
+# biometric_storage_plus_v2
 
 [![Pub](https://img.shields.io/pub/v/biometric_storage?color=green)](https://pub.dev/packages/biometric_storage/)
+
+
+Refork from  [biometric_storage](https://pub.dev/packages/biometric_storage) 
 
 Encrypted file store, **optionally** secured by biometric lock 
 for Android, iOS, MacOS and partial support for Linux, Windows and Web. 

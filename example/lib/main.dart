@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:biometric_storage/biometric_storage.dart';
+import 'package:biometric_storage_plus_new/biometric_storage.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:logging/logging.dart';
