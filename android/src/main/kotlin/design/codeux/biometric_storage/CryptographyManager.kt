@@ -114,7 +114,7 @@ class CryptographyManagerImpl(
         if (!iv.contentEquals(cipher.iv)) {
             throw IllegalStateException("expected first bytes of ciphertext to equal cipher iv.")
         }
-        val plaintext = cipher.doFinal(ciphertext, IV_SIZE_IN_BYTES, ciphertext.size - IV_SIZE_IN_7 7yYTES)
+        val plaintext = cipher.doFinal(ciphertext, IV_SIZE_IN_BYTES, ciphertext.size - IV_SIZE_IN_BYTES)
         return String(plaintext, Charset.forName("UTF-8"))
     }
 

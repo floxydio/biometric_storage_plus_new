@@ -8,7 +8,7 @@ import android.security.keystore.UserNotAuthenticatedException
 import androidx.annotation.AnyThread
 import androidx.annotation.UiThread
 import androidx.annotation.WorkerThread
-import biometric
+import biometric.
 import biometric.BiometricManager.Authenticators.*
 import androidx.fragment.app.FragmentActivity
 import io.flutter.embedding.engine.plugins.FlutterPlugin
